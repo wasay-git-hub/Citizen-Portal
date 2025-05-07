@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .success-container {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            transform: scale(0);
+            animation: scaleUp 0.5s forwards;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #4CAF50;
+            margin: 0 auto 20px;
+            position: relative;
+            animation: checkmark 0.5s;
+        }
+
+        .checkmark::after {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 40px;
+            width: 25px;
+            height: 5px;
+            background: white;
+            transform: rotate(45deg);
+            border-radius: 2px;
+        }
+
+        .checkmark::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 35px;
+            width: 40px;
+            height: 5px;
+            background: white;
+            transform: rotate(-45deg);
+            border-radius: 2px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .redirect-text {
+            color: #7f8c8d;
+        }
+
+        @keyframes scaleUp {
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes checkmark {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark"></div>
+        <h1>Login Successful!</h1>
+        <p class="redirect-text">Redirecting to homepage...</p>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>

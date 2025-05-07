@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Appointments</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef5ff;
+    }
+
+    nav {
+  background-color: #004aad;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+
+    .container {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 2rem;
+    }
+
+    .option {
+      background-color: #e6f0ff;
+      padding: 1.2rem 2rem;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+      color: #004aad;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+
+    .option:hover {
+      background-color: #cce0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Citizen App</div>
+    <ul>
+    <li><a href="homepage.php">Home</a></li>
+          <li><a href="surveys.php">Surveys</a></li>
+          <li><a href="appointments1.html">Appointments</a></li>
+          <li><a href="complaints1.html">Complaints</a></li>
+          <li><a href="announcements.php">Announcements</a></li>
+          <li><a href="transport.php">Transport</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h2>View Appointments for:</h2>
+
+    <a class="option" href="appointments7.php">Identity Card</a>
+    <a class="option" href="appointments8.php">Driving License</a>
+    <a class="option" href="appointments9.php">Passport</a>
+  </div>
+
+</body>
+</html>

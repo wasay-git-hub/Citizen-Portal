@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITIZEN WEB PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-right: 15px;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+
+        /* Options Container */
+        .options-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex: 1;
+        }
+
+        .option-card {
+            background: white;
+            border-radius: 10px;
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .passport-option:hover {
+            border-top: 4px solid #3498db;
+        }
+
+        .cnic-option:hover {
+            border-top: 4px solid #e74c3c;
+        }
+
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .passport-option .icon {
+            color: #3498db;
+        }
+
+        .cnic-option .icon {
+            color: #e74c3c;
+        }
+
+        .option-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .option-card p {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            flex: 1;
+        }
+
+        .select-btn {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .passport-option .select-btn:hover {
+            background: #3498db;
+        }
+
+        .cnic-option .select-btn:hover {
+            background: #e74c3c;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+
+        .contact {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact a {
+            color: #7f8c8d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #3498db;
+        }
+
+        .contact i {
+            margin-right: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .options-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .option-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .logo {
+                flex-direction: column;
+            }
+
+            .logo i {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-landmark"></i>
+                <h1>CITIZEN WEB PORTAL - NADRA PANEL</h1>
+            </div>
+            <p>Select the service you need to access</p>
+        </header>
+
+        <div class="options-container">
+            <div class="option-card passport-option">
+                <div class="icon">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <h2>Passport Application</h2>
+                <p>veiw passport applications</p>
+                <a href="passport_application.php" class="select-btn">Select</a>
+            </div>
+
+            <div class="option-card cnic-option">
+                <div class="icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h2>CNIC Application</h2>
+                <p>veiw cnic applications</p>
+                <a href="cnic_application.php" class="select-btn">Select</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 Government Services Portal. All rights reserved.</p>
+            <div class="contact">
+                <a href="#"><i class="fas fa-phone"></i> Helpdesk: 0800-12345</a>
+                <a href="#"><i class="fas fa-envelope"></i> support@govportal.pk</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

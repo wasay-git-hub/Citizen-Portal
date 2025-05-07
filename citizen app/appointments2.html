@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Appointment</title>
+<style>
+    
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f6ff;
+  color: #00274d;
+}
+
+nav {
+  background-color: #004aad;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003087;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #00274d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+}
+    nav {
+        background-color: #004aad;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      /* width: 100%; */
+      /* position: relative;
+      bottom: 35px; */
+    }
+    nav .logo{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Citizen App</div>
+        <ul>
+          <li><a href="homepage.php">Home</a></li>
+          <li><a href="surveys.php">Surveys</a></li>
+          <li><a href="appointments1.html">Appointments</a></li>
+          <li><a href="complaints1.html">Complaints</a></li>
+          <li><a href="announcements.php">Announcements</a></li>
+          <li><a href="transport.php">Transport</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h1>Applying for:</h1>
+        <div class="card-grid">
+          <a href="appointments4.php" class="card">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/driving-license-illustration-download-in-svg-png-gif-file-formats--getting-driver-get-permission-identification-proof-miscellaneous-pack-illustrations-4397188.png?f=webp" alt="License">
+            <h2>Driving License</h2>
+          </a>
+          <a href="appointments5.php" class="card">
+            <img src="https://media.istockphoto.com/id/1412018366/vector/hand-holding-immunity-passport-person-with-vaccination-certificate-or-document-flat-vector.jpg?s=612x612&w=0&k=20&c=0i8Q2JNNFXs60UyeyOthcDX9LT6po5Nz12mPOINWHjQ=" alt="Passport">
+            <h2>Passport</h2>
+          </a>
+          <a href="appointments6.php" class="card">
+            <img src="https://media.istockphoto.com/id/612650934/vector/id-card-isolated-on-white-background-business-identification-icon.jpg?s=612x612&w=0&k=20&c=byimQb2_LJydS803qrpYKk-80dIC4HEp-BidObosij0=" alt="ID Card">
+            <h2>Identity Card</h2>
+          </a>
+</body>
+</html>
