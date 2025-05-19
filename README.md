@@ -1,2 +1,61 @@
-# Citizen-Portal
-A comprehensive web-based platform facilitating direct communication between  citizens and authorities. The Citizen Portal is designed to enhance the welfare and convenience of citizens by  providing a centralized platform. This system ensures dynamic content rendering, offering personalized views for each user based on their interactions. 
+# 🚀 Citizen Portal – A Full Stack Government Services Platform 🌐
+
+**Live Deployment:** [http://wasay.rf.gd/]
+
+---
+
+## 📖 Overview
+
+**Citizen Portal** is a full-stack web application developed to digitally transform how citizens interact with government departments. It offers a unified and user-friendly platform to streamline services such as appointments, complaints, surveys, public transport, and more — all with secure access and real-time updates.
+
+---
+
+## 🧩 Key Modules & Functionality
+
+- **🔐 Secure Login/Signup**  
+  Secure authentication for both Citizens and Government Departments (NADRA, Police, CDA, Administration).
+
+- **📊 Survey System**  
+  - Admins can create surveys.  
+  - Citizens can submit responses.  
+  - Results are accessible to relevant departments.
+
+- **📅 Appointment Scheduling**  
+  - Citizens request appointments for CNIC, passport, and driving license.  
+  - Departments can manage and approve appointments.
+
+- **🚌 Public Transport Schedule**  
+  - Managed by CDA.  
+  - Real-time schedules accessible to citizens.
+
+- **🗣 Complaint Registration & Resolution**  
+  - Citizens submit complaints department-wise.  
+  - Track complaint resolution with live status updates.
+
+- **📢 Announcements & Notifications**  
+  - Departments can publish important updates.  
+  - Citizens receive timely alerts.
+
+- **📍 Authorization & Authentication**  
+  - Role-based access control.  
+  - Each department can only view and manage its relevant modules and data.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Deployment:** Browser-based (Live Website)
+
+---
+
+## 🎯 Project Goals
+
+- Real-time updates and interactivity  
+- Data integrity and security  
+- Modular, scalable architecture  
+- Improved accessibility and transparency  
+- Streamlined public service delivery
+
