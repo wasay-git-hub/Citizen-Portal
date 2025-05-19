@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Web Portal - Admin</title>
+    <style>
+        /* Simple Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .admin-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .option-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .option-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .option-card p {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+
+        .option-card a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .option-card a:hover {
+            background: #2980b9;
+        }
+
+        .vvv{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Citizen Web Portal - Admin Panel</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="vvv">Welcome, Administrator</h2>
+        <p class="vvv">Choose an option below to manage the portal:</p>
+
+        <div class="admin-options">
+            <div class="option-card">
+                <h3>Make an Announcement</h3>
+                <p>Create public announcements for citizens</p>
+                <a href="announcement.php">ANNOUNCE!</a>
+            </div>
+
+            <div class="option-card">
+                <h3>Create a new Department</h3>
+                <p>Add another department and its services to the Citizen Portal</p>
+                <a href="admin lock.php">Go →</a>
+            </div>
+
+            <div class="option-card">
+                <h3>Create a survey</h3>
+                <p>Take a survey from citizens</p>
+                <a href="survey.php">Go →</a>
+            </div>
+
+            <div class="option-card">
+                <h3>Add questions to survey</h3>
+                <p>Add questions to survey</p>
+                <a href="question.php">Go →</a>
+            </div>
+
+            <div class="admin-options">
+                <div class="option-card">
+                    <h3>View Survey's Responses</h3>
+                    <p>Check responses of the citizens given to the surveys conducted</p>
+                    <a href="responses.php">VIEW!</a>
+                </div>
+    
+        </div>
+    </div>
+</body>
+</html>
