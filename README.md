@@ -1,7 +1,5 @@
 # 🚀 Citizen Portal – A Full Stack Government Services Platform 🌐
 
-**Live Deployment:** [http://wasay.rf.gd/]
-
 ---
 
 ## 📖 Overview
@@ -47,7 +45,6 @@
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** PHP  
 - **Database:** MySQL  
-- **Deployment:** Browser-based (Live Website)
 
 ---
 
